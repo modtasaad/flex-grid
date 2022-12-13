@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: lightblue;
+    }
+    .item1 { grid-area: head;}
+    .item2 { grid-area: sidenav; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: sidebar; }
+    .item5 { grid-area: foot; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+      "sidenav head head head"
+      "sidenav main main sidebar"
+      "sidenav main main sidebar"
+      "sidenav main main sidebar"
+      "foot foot foot sidebar"
+      ;   
+    padding: 5px;
+    height: 430px;
+    gap: 5px;
+    transform: rotate(45deg);
+    margin: 100px 400px;
+}
+
+.grid-container > div {
+  background-color: rgba(27, 23, 23, 0.336);
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 18px;
+}
+  </style>
+</head>
+<body >
+  <div class="grid-container">
+    <div class="item1">Head</div>
+    <div class="item2">sidenav</div>
+    <div class="item3">Main</div>  
+    <div class="item4">sidebar</div>
+    <div class="item5">Foot</div>
+  </div>
+</body>
+</html>

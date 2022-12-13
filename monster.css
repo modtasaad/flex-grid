@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: row column;
+}
+
+ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+    height: 40px;
+    gap: row column;
+}
+ul li{
+    list-style: none;
+}
+
+.flex{
+    border: 2px solid black;
+height: 150px;
+width: 500px;
+position: relative;
+text-align: center;
+padding: 10px;
+margin-left: 20px;
+margin-right: 20px;
+/* display: flex;
+flex-direction: column;
+justify-content: space-between; */
+
+}
+
+
+
+/*One way we can try to get all the flex items to have the same base size is by declaring flex: 1 on all of them:
+
+.flex-parent { display: flex; }
+.flex-parent > * { flex: 1; }*/
+.container > * { flex: 1; }
+
+
+
+  .flex .foo{
+background-color: #eee;
+position: absolute; 
+bottom: 0;
+left: 0;
+ width: 100%;
+  } 
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+a :hover {
+    color: brown;
+}
